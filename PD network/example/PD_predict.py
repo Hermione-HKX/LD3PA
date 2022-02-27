@@ -128,10 +128,10 @@ def predict(data):
     load model and predict
     data: example data
     """
-    model = model_from_json(open('C:/Users/30411/PycharmProjects/opensource/PD network/model/PD_network_'
+    model = model_from_json(open('PD network/model/PD_network_'
                                  + str(obj_num) + '.json').read(),
                             custom_objects={'Attention_d': Attention_d, 'Attention_m': Attention_m, 'tf': tf})
-    model.load_weights('C:/Users/30411/PycharmProjects/opensource/PD network/model/PD_network_' + str(obj_num) +
+    model.load_weights('PD network/model/PD_network_' + str(obj_num) +
                        '_weight.h5')
 
     desc_p_i, env_p_i, pos_p_i, desc_mask_i, mix_mask_i = \
@@ -152,6 +152,6 @@ if __name__ == '__main__':
     Or you can build you own input.
     """
     obj_num = 10    # obj_num is the maximum object number in the environment.
-    example_data = np.load('C:/Users/30411/PycharmProjects/opensource/PD network/example/example_data/example_'
+    example_data = np.load('PD network/example/example_data/example_'
                            + str(obj_num) + '.npz', allow_pickle=True)
     predict(example_data)
