@@ -12,7 +12,7 @@ from nltk.tokenize import word_tokenize
 
 # Open the pretrained word embedding model: glove-50d
 model = gensim.models.KeyedVectors.load_word2vec_format \
-    ('C:/Users/30411/PycharmProjects/opensource/glove/glove.6B.50d.bin', binary=False)
+    ('glove.6B.50d.bin', binary=False)
 
 
 def build_inputs(obj_n, desc, obj_p, env, XY):
@@ -147,7 +147,7 @@ def position_embedding(inputs):
 if __name__ == '__main__':
     """obj_n, desc, obj_p, env, XY"""
     obj_num = 10
-    example_data = np.load('C:/Users/30411/PycharmProjects/opensource/PD network/example/example_data/example_'
+    example_data = np.load('PD network/example/example_data/example_'
                            + str(obj_num) + '.npz', allow_pickle=True)
     example_desc, example_env, example_pos, example_label = \
         example_data['example_desc'], example_data['example_env'], example_data['example_pos'], example_data['example_label']
