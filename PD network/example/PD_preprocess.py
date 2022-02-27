@@ -12,7 +12,7 @@ from nltk.tokenize import word_tokenize
 
 # Open the pretrained word embedding model: glove-50d
 model = gensim.models.KeyedVectors.load_word2vec_format \
-    ('glove.6B.50d.bin', binary=False)
+    ('glove_word2vec.6B.50d.txt', binary=False)
 
 
 def build_inputs(obj_n, desc, obj_p, env, XY):
