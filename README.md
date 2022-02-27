@@ -15,7 +15,6 @@ Credits
 -------
 We really appreciate if your scientific publications resulting from the projects that make use of LD3PA would cite our work.
 
-.. code-block:: bibtex
 
     @article{huang2022language,
     title={Language-Driven Robot Manipulation with Perspective Disambiguation and Placement Optimization},
