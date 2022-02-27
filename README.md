@@ -7,8 +7,8 @@ Perspective ambiguity widely exists in human-robot interaction, especially in th
 Dependency
 ----
 
-`GloVe.6B <https://www.kaggle.com/watts2/glove6b50dtxt>`
-`Eigen <http://eigen.tuxfamily.org/>`_  `CGAL <https://www.cgal.org/>`_ `PyBind11 <http://github.com/pybind/pybind11/>`_
+(GloVe.6B)[https://www.kaggle.com/watts2/glove6b50dtxt]
+
 
 -------
 Credits
