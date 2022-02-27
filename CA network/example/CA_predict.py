@@ -71,9 +71,9 @@ def predict(data):
     load model and predict
     data: example data
     """
-    model = model_from_json(open('C:/Users/30411/PycharmProjects/opensource/CA network/model/CA_network.json').read(),
+    model = model_from_json(open('CA network/model/CA_network.json').read(),
                             custom_objects={'Attention': Attention, 'tf': tf})
-    model.load_weights('C:/Users/30411/PycharmProjects/opensource/CA network/model/CA_network_weight.h5')
+    model.load_weights('CA network/model/CA_network_weight.h5')
 
     cmd_p_i, env_p_i, cmd_mask_i = build_inputs(data['example_cmd'], data['example_env'])
 
@@ -91,6 +91,6 @@ if __name__ == '__main__':
     Some examples are provided. You can choose them to test this code. 
     Or you can build you own input.
     """
-    example_data = np.load('C:/Users/30411/PycharmProjects/opensource/CA network/example/CA_example_data.npz',
+    example_data = np.load('CA network/example/CA_example_data.npz',
                            allow_pickle=True)
     predict(example_data)
