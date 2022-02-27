@@ -7,7 +7,7 @@ Perspective ambiguity widely exists in human-robot interaction, especially in th
 Dependency
 ----
 
-Word Embedding `GloVe.6B <https://www.kaggle.com/watts2/glove6b50dtxt>`
+Word Embedding _`GloVe.6B <https://www.kaggle.com/watts2/glove6b50dtxt>`
 
 -------
 Credits
