@@ -9,7 +9,7 @@ from nltk.tokenize import word_tokenize
 
 # Open the pretrained word embedding model: glove-50d
 model = gensim.models.KeyedVectors.load_word2vec_format \
-    ('C:/Users/30411/PycharmProjects/opensource/glove/glove.6B.50d.bin', binary=False)
+    ('glove.6B.50d.bin', binary=False)
 
 
 def build_inputs(cmd, env):
@@ -99,6 +99,6 @@ def position_embedding(inputs):
 
 
 if __name__ == '__main__':
-    data = np.load('C:/Users/30411/PycharmProjects/opensource/CA network/example/CA_example_data.npz',
+    data = np.load('CA network/example/CA_example_data.npz',
                    allow_pickle=True)
     build_inputs(data['example_cmd'], data['example_env'])
